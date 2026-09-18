@@ -633,8 +633,9 @@
     {
       "@id": "https://repolex.ai/r/urllib3/urllib3/commit/bfe8e198a13800e3ee8ef8124a8928acb170c843",
       "git:hexsha": "bfe8e198a13800e3ee8ef8124a8928acb170c843",
-      "repolex:parseStatus": "pending",
-      "git:tagName": "2.6.1"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "2.6.1",
+      "repolex:parsedAt": "2026-09-18T09:40:29.925927+00:00"
     },
     {
       "@id": "https://repolex.ai/r/urllib3/urllib3/commit/83f8643ffb5b7f197457379148e2fa118ab0fcdc",
