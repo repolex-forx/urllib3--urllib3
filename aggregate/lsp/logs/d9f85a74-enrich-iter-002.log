@@ -1,0 +1,31 @@
+[2026-09-19T19:43:28Z] === ENRICH ITERATION 2 START | repo=urllib3/urllib3 sha=d9f85a74 ===
+[2026-09-19T19:43:28Z] [iter=2] PHASE START: enrich repo=urllib3/urllib3 sha=d9f85a74 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/d9f85a74-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/d9f85a749488188c286cd50606d159874db94d5f.nq.gz
+[2026-09-19T19:43:37Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-19T19:43:44Z] [iter=2] AST store loaded triples=1059599 load_secs=6 mem_mb=888 MB
+[2026-09-19T19:43:44Z] [iter=2] Step 2: Finding LSP targets mem_mb=888 MB
+[2026-09-19T19:43:47Z] [iter=2] LSP targets found call_sites=7096 imports=31 extends=2 implements=0 secs=3
+[2026-09-19T19:43:50Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=888 MB
+[2026-09-19T19:43:56Z] [iter=2] Position index built positions=70386 nodes_with_types=91620 secs=6 mem_mb=888 MB
+[2026-09-19T19:43:56Z] [iter=2] Step 3: Starting LSP resolution mem_mb=888 MB already_completed_types=[] already_completed_files=0
+[2026-09-19T19:43:56Z] [iter=2] Resolving target type target_type=call_site count=7096
+[2026-09-19T19:45:01Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=1 resolved=681 errors=119 current=test/with_dummyserver/test_connectionpool.py
+[2026-09-19T19:45:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.5 files_done=5 resolved=1559 errors=215 current=src/urllib3/contrib/_securetransport/low_level.py
+[2026-09-19T19:46:34Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=3.1 files_done=9 resolved=2222 errors=283 current=src/urllib3/util/url.py
+[2026-09-19T19:47:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=3.7 files_done=12 resolved=2692 errors=350 current=test/test_collections.py
+[2026-09-19T19:47:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=4.3 files_done=14 resolved=2826 errors=436 current=test/with_dummyserver/test_chunked_transfer.py
+[2026-09-19T19:48:36Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=5.1 files_done=18 resolved=3058 errors=541 current=src/urllib3/util/ssltransport.py
+[2026-09-19T19:49:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=5.7 files_done=22 resolved=3322 errors=610 current=src/urllib3/connectionpool.py
+[2026-09-19T19:49:45Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=6.3 files_done=23 resolved=3366 errors=691 current=noxfile.py
+[2026-09-19T19:50:25Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=6.9 files_done=27 resolved=3666 errors=774 current=test/test_ssl.py
+[2026-09-19T19:51:03Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=7.6 files_done=32 resolved=4043 errors=854 current=src/urllib3/_collections.py
+[2026-09-19T19:51:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=8.4 files_done=41 resolved=4359 errors=954 current=test/port_helpers.py
+[2026-09-19T19:52:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=8.9 files_done=45 resolved=4467 errors=1024 current=test/__init__.py
+[2026-09-19T19:52:52Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=9.4 files_done=51 resolved=4601 errors=1091 current=src/urllib3/fields.py
+[2026-09-19T19:53:16Z] [iter=2] Target type resolved target_type=call_site resolved=4782 errors=1141 secs=560 mem_mb=888 MB
+[2026-09-19T19:53:16Z] [iter=2] Resolving target type target_type=import_statement count=31
+[2026-09-19T19:53:17Z] [iter=2] Target type resolved target_type=import_statement resolved=26 errors=0 secs=1 mem_mb=888 MB
+[2026-09-19T19:53:17Z] [iter=2] Resolving target type target_type=extends_clause count=2
+[2026-09-19T19:53:18Z] [iter=2] Target type resolved target_type=extends_clause resolved=2 errors=0 secs=1 mem_mb=888 MB
+[2026-09-19T19:53:25Z] [iter=2] Step 5: Writing final enrichment file triples=68845
+[2026-09-19T19:53:26Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/d9f85a749488188c286cd50606d159874db94d5f.nq.gz size_kb=1369
+[2026-09-19T19:53:26Z] [iter=2] PHASE END: enrich elapsed_s=598 elapsed_min=10.0 total_triples=68845
