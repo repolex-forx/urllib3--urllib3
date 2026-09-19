@@ -1,0 +1,29 @@
+[2026-09-19T17:58:21Z] === ENRICH ITERATION 1 START | repo=urllib3/urllib3 sha=d9d85c88 ===
+[2026-09-19T17:58:21Z] [iter=1] PHASE START: enrich repo=urllib3/urllib3 sha=d9d85c88 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/d9d85c88-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/d9d85c88aa644af56d5e129634e750ce76e1a765.nq.gz
+[2026-09-19T17:58:21Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-19T17:58:28Z] [iter=1] AST store loaded triples=998329 load_secs=7 mem_mb=886 MB
+[2026-09-19T17:58:28Z] [iter=1] Step 2: Finding LSP targets mem_mb=886 MB
+[2026-09-19T17:58:31Z] [iter=1] LSP targets found call_sites=7261 imports=0 extends=0 implements=0 secs=3
+[2026-09-19T17:58:34Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=886 MB
+[2026-09-19T17:58:40Z] [iter=1] Position index built positions=68002 nodes_with_types=88549 secs=6 mem_mb=886 MB
+[2026-09-19T17:58:40Z] [iter=1] Step 3: Starting LSP resolution mem_mb=886 MB already_completed_types=[] already_completed_files=0
+[2026-09-19T17:58:40Z] [iter=1] Resolving target type target_type=call_site count=7261
+[2026-09-19T17:58:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=1 resolved=410 errors=16 current=dummyserver/handlers.py
+[2026-09-19T17:59:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=4 resolved=747 errors=74 current=src/urllib3/contrib/securetransport.py
+[2026-09-19T18:01:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=6 resolved=908 errors=305 current=test/test_retry_deprecated.py
+[2026-09-19T18:01:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.4 files_done=8 resolved=1206 errors=377 current=test/with_dummyserver/test_https.py
+[2026-09-19T18:02:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.1 files_done=12 resolved=1685 errors=460 current=test/with_dummyserver/test_socketlevel.py
+[2026-09-19T18:03:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.9 files_done=13 resolved=2099 errors=543 current=test/test_response.py
+[2026-09-19T18:04:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.8 files_done=15 resolved=2497 errors=640 current=test/test_ssl.py
+[2026-09-19T18:04:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.3 files_done=20 resolved=2651 errors=706 current=test/test_poolmanager.py
+[2026-09-19T18:05:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.9 files_done=26 resolved=2908 errors=777 current=src/urllib3/contrib/_securetransport/bindings.py
+[2026-09-19T18:05:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.5 files_done=30 resolved=3073 errors=857 current=test/test_connectionpool.py
+[2026-09-19T18:06:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.1 files_done=34 resolved=3395 errors=922 current=noxfile.py
+[2026-09-19T18:07:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.9 files_done=40 resolved=3571 errors=1015 current=test/__init__.py
+[2026-09-19T18:07:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.4 files_done=44 resolved=3683 errors=1081 current=src/urllib3/util/retry.py
+[2026-09-19T18:08:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.9 files_done=50 resolved=3841 errors=1147 current=src/urllib3/exceptions.py
+[2026-09-19T18:08:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.4 files_done=77 resolved=4186 errors=1208 current=src/urllib3/packages/backports/makefile.py
+[2026-09-19T18:08:49Z] [iter=1] Target type resolved target_type=call_site resolved=4200 errors=1210 secs=609 mem_mb=886 MB
+[2026-09-19T18:08:56Z] [iter=1] Step 5: Writing final enrichment file triples=64050
+[2026-09-19T18:08:57Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/d9d85c88aa644af56d5e129634e750ce76e1a765.nq.gz size_kb=1294
+[2026-09-19T18:08:57Z] [iter=1] PHASE END: enrich elapsed_s=636 elapsed_min=10.6 total_triples=64050
