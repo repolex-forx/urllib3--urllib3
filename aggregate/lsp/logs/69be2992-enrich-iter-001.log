@@ -1,0 +1,31 @@
+[2026-09-19T06:37:03Z] === ENRICH ITERATION 1 START | repo=urllib3/urllib3 sha=69be2992 ===
+[2026-09-19T06:37:03Z] [iter=1] PHASE START: enrich repo=urllib3/urllib3 sha=69be2992 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/69be2992-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/69be2992f8a25a1f27e49f339e4d5b98dec07462.nq.gz
+[2026-09-19T06:37:06Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-19T06:37:14Z] [iter=1] AST store loaded triples=1008380 load_secs=8 mem_mb=887 MB
+[2026-09-19T06:37:14Z] [iter=1] Step 2: Finding LSP targets mem_mb=887 MB
+[2026-09-19T06:37:17Z] [iter=1] LSP targets found call_sites=6782 imports=31 extends=2 implements=0 secs=3
+[2026-09-19T06:37:20Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=887 MB
+[2026-09-19T06:37:26Z] [iter=1] Position index built positions=66975 nodes_with_types=87249 secs=6 mem_mb=887 MB
+[2026-09-19T06:37:26Z] [iter=1] Step 3: Starting LSP resolution mem_mb=887 MB already_completed_types=[] already_completed_files=0
+[2026-09-19T06:37:26Z] [iter=1] Resolving target type target_type=call_site count=6782
+[2026-09-19T06:37:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.9 files_done=1 resolved=124 errors=62 current=test/test_retry.py
+[2026-09-19T06:38:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=4 resolved=968 errors=137 current=test/contrib/test_pyopenssl.py
+[2026-09-19T06:39:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.5 files_done=6 resolved=1661 errors=250 current=dummyserver/proxy.py
+[2026-09-19T06:40:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.1 files_done=10 resolved=1951 errors=325 current=test/test_proxymanager.py
+[2026-09-19T06:40:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.8 files_done=14 resolved=2580 errors=403 current=test/test_poolmanager.py
+[2026-09-19T06:41:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.3 files_done=19 resolved=3075 errors=464 current=src/urllib3/contrib/pyopenssl.py
+[2026-09-19T06:41:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.9 files_done=21 resolved=3209 errors=537 current=test/__init__.py
+[2026-09-19T06:42:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.9 files_done=25 resolved=3370 errors=673 current=test/conftest.py
+[2026-09-19T06:43:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.6 files_done=29 resolved=3674 errors=770 current=test/test_ssltransport.py
+[2026-09-19T06:44:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.1 files_done=30 resolved=3801 errors=838 current=test/test_connectionpool.py
+[2026-09-19T06:44:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.7 files_done=37 resolved=4152 errors=913 current=test/with_dummyserver/test_chunked_transfer.py
+[2026-09-19T06:45:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.2 files_done=43 resolved=4305 errors=981 current=test/test_ssl.py
+[2026-09-19T06:45:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.7 files_done=52 resolved=4538 errors=1055 current=test/port_helpers.py
+[2026-09-19T06:45:57Z] [iter=1] Target type resolved target_type=call_site resolved=4626 errors=1074 secs=511 mem_mb=887 MB
+[2026-09-19T06:45:57Z] [iter=1] Resolving target type target_type=import_statement count=31
+[2026-09-19T06:45:58Z] [iter=1] Target type resolved target_type=import_statement resolved=26 errors=0 secs=1 mem_mb=887 MB
+[2026-09-19T06:45:58Z] [iter=1] Resolving target type target_type=extends_clause count=2
+[2026-09-19T06:45:59Z] [iter=1] Target type resolved target_type=extends_clause resolved=2 errors=0 secs=1 mem_mb=887 MB
+[2026-09-19T06:46:06Z] [iter=1] Step 5: Writing final enrichment file triples=64931
+[2026-09-19T06:46:07Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/69be2992f8a25a1f27e49f339e4d5b98dec07462.nq.gz size_kb=1276
+[2026-09-19T06:46:07Z] [iter=1] PHASE END: enrich elapsed_s=544 elapsed_min=9.1 total_triples=64931
