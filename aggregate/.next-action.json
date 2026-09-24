@@ -2,7 +2,7 @@
   "next_action": "enrich",
   "phase_completed": "ast",
   "commit_sha": "edc3ddb3d1cbc5871df4a17a53ca53be7b37facc",
-  "ts": "2026-09-24T19:07:58Z",
+  "ts": "2026-09-24T19:08:22Z",
   "chunks": 1,
   "triples": 808938,
   "skip_lsp": false
