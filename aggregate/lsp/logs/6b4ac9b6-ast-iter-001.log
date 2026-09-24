@@ -1,0 +1,7 @@
+[2026-09-24T11:30:22Z] === AST ITERATION 1 START | repo=urllib3/urllib3 sha=6b4ac9b6 ===
+[2026-09-24T11:30:22Z] [iter=1] PHASE START: ast repo=urllib3/urllib3 sha=6b4ac9b6
+[2026-09-24T11:30:22Z] [iter=1] Building AST aggregate chunks
+[2026-09-24T11:31:26Z] [iter=1] AST chunks built count=1 triples=808812
+[2026-09-24T11:31:26Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/6b4ac9b6b973c405d3e58aaa4ef1ad86252208c0/.complete
+[2026-09-24T11:31:26Z] [iter=1] PHASE END: ast elapsed_s=64 elapsed_min=1.1
+[2026-09-24T11:31:26Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
