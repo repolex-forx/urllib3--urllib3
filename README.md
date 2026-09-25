@@ -6,29 +6,27 @@ RDF knowledge graph data for [urllib3/urllib3](https://github.com/urllib3/urllib
 
 ## How to use this data
 
-The easiest way to get started is to install the [lexq](https://github.com/repolex-ai/lexq) query tool using [uv](https://docs.astral.sh/uv/getting-started/installation/).
-
-If you have uv installed, just copy/paste this into your terminal:
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
 
 ```bash
-uv tool install git+https://github.com/repolex-ai/lexq
+cargo install --git https://github.com/repolex-ai/rlex
 ```
 
-This installs lexq onto your system, in your user context. Verify the install:
+Verify the install:
 
 ```bash
-lexq --help
+rlex --help
 ```
 
-**lexq is designed to be used primarily by LLMs in a terminal.** Start up your favorite LLM and ask it to use the lexq tool. It's that easy!
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
 
 To load this repo's data:
 
 ```bash
-lexq download urllib3/urllib3
+rlex download urllib3/urllib3
 ```
 
-This will automatically download essential data files from the last parsed commit. Consult `lexq --moreinfo` for other options, including downloading multiple commits, blobs, etc.
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
 
 ## Data structure
 
@@ -138,6 +136,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   │   │   └── chunk-001.nq.gz
 │   │   ├── ddb8c96bd93f3a00fe9eba142e6739533c2b7164
 │   │   │   └── chunk-001.nq.gz
+│   │   ├── edc3ddb3d1cbc5871df4a17a53ca53be7b37facc
+│   │   │   └── chunk-001.nq.gz
 │   │   └── f96a1cfc568beddf1e17ce7609609eca40780be5
 │   │       └── chunk-001.nq.gz
 │   ├── lsp
@@ -191,6 +191,7 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   │   ├── d9f85a749488188c286cd50606d159874db94d5f.nq.gz
 │   │   ├── dd00949dbded99869981880270d3ec900989e82b.nq.gz
 │   │   ├── ddb8c96bd93f3a00fe9eba142e6739533c2b7164.nq.gz
+│   │   ├── edc3ddb3d1cbc5871df4a17a53ca53be7b37facc.nq.gz
 │   │   └── f96a1cfc568beddf1e17ce7609609eca40780be5.nq.gz
 │   └── repolex
 │       ├── 0248277dd7ac0239204889ca991353ad3e3a1ddc
@@ -293,6 +294,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │       │   └── chunk-001.nq.gz
 │       ├── ddb8c96bd93f3a00fe9eba142e6739533c2b7164
 │       │   └── chunk-001.nq.gz
+│       ├── edc3ddb3d1cbc5871df4a17a53ca53be7b37facc
+│       │   └── chunk-001.nq.gz
 │       └── f96a1cfc568beddf1e17ce7609609eca40780be5
 │           └── chunk-001.nq.gz
 └── blob
@@ -339,12 +342,9 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     ├── 06cde2fb9f60f1bfcc7fbb5620ab49492e08ba5f.nq.gz
     ├── 06db4a0e186920bc84a8fce3a52d369ba73528c5.nq.gz
     ├── 07337d9a56d81c7938547506444b9a4ac0876e06.nq.gz
-    ├── 081877b1374dee09a91aa56c7498f5a2915f290f.nq.gz
-    ├── 08277e97e0c93ede67e6730e3fe50846e610f9f2.nq.gz
-    ├── 083854d1b04810e174b31fe2cd087401d3065597.nq.gz
-    └── 0855f00a2a370c229ba8fa16584863876c98d9ed.nq.gz
+    └── 081877b1374dee09a91aa56c7498f5a2915f290f.nq.gz
 
-108 directories, 200 files
+110 directories, 200 files
 ```
 
 | Directory | What it contains |
@@ -358,10 +358,11 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 | `branch/` | Branch metadata. |
 | `tag/` | Tag metadata. |
 | `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
 
 ## Source repository
 
 [urllib3/urllib3](https://github.com/urllib3/urllib3)
 
 ---
-*Parsed on 2026-09-24 by [repolex](https://repolex.ai)*
+*Parsed on 2026-09-25 by [repolex](https://repolex.ai)*

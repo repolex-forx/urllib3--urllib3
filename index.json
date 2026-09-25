@@ -3,6 +3,11 @@
   "repo": "urllib3",
   "versions": [
     {
+      "commit": "edc3ddb3d1cbc5871df4a17a53ca53be7b37facc",
+      "tag": "1.25.5",
+      "parsed_at": "2026-09-25T19:07:28.365299+00:00"
+    },
+    {
       "commit": "6b4ac9b6b973c405d3e58aaa4ef1ad86252208c0",
       "tag": "1.25.6",
       "parsed_at": "2026-09-24T12:40:35.123235+00:00"
